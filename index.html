@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>  <!-- Load Your Script After -->
+</head>
+<body onload="drawIt()">
+  <div id="main-container">
+    <div id="controls">
+        <div>
+    <div id="time">Time:</div>
+      <div id="cas">00:00</div>
+      <div id="points">
+        <img id="hamster-img" src="https://i.postimg.cc/BvBh5QhM/c0270f4f-54ba-4249-ae55-d1e09865f900.webp" alt="Hamster" />
+        <span id="tocke">0</span>
+        </div>
+        </div>
+
+        <div>
+      <button id="pause-play-button">Pause</button>
+      <button id="restart">Restart</button>
+            </div>
+
+            <div id ="btns">
+      <label for="musicSelect">Music:</label>
+      <select id="musicSelect">
+        <option value="music1">Music 1</option>
+        <option value="music2">Music 2</option>
+      </select>
+      </div>
+    </div>
+
+    <div id="game-container">
+      <canvas id="canvas" width="1100" height="700"></canvas>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'SpeakDays';
+  src: url('Speak Days.otf') format('truetype');
+}
+
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #eedec3;
+  font-family: 'SpeakDays', sans-serif;
+}
+
+/* Centered canvas */
+#canvas {
+  border: 5px solid black;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'SpeakDays';
+}
+
+/* Font-family consistency */
+label,
+#musicSelect {
+  font-family: 'SpeakDays';
+}
+
+/* Layout containers */
+#main-container {
+  display: flex;
+  height: 100vh;
+}
+
+#controls {
+  width: 200px;
+  background-color: #f3e6d3;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#game-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons and selects */
+#controls button,
+#controls select {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'SpeakDays';
+}
+
+/* Score & Time display */
+
+#cas {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#tocke {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#time {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+#pause-play-button,
+#restart {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: 'SpeakDays';
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#pause-play-button {
+  background-color: #FFDAB9;
+  color: black;
+}
+
+#restart {
+  background-color: #E0FFFF;
+  color: black;
+}
+
+/* Image */
+#hamster-img {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+}
